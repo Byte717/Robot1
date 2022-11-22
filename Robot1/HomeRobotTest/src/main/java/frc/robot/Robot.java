@@ -13,7 +13,6 @@ import frc.robot.subsystems.DriveTrain;
 
 public class Robot extends TimedRobot {
   public static DriveTrain drivetrain = new DriveTrain();
-  Command autonomous;
 
 
 
@@ -21,7 +20,6 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
-    autonomous = new Spin(drivetrain);
     private final Joystick j1 = new Joystick(0);
     private final Joystick j2 = new Joystick(1);
   }
