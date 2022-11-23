@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;;
 public class DriveTrain extends Subsystem {
   private PWMSparkMax motorLeft = new PWMSparkMax(0);
   private PWMSparkMax motorRight = new PWMSparkMax(1);
-  rightMotor.setInverted(true);
+  motorRight.setInverted(true);
   public DifferentialDrive drive = new DifferentialDrive(leftMotor,rightMotor);
 
 
